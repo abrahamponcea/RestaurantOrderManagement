@@ -1,15 +1,19 @@
-const mysql = require ('mysql');
+const mysql = require ('mysql2');
 const { promisify } = require('util');
 
 //npm run dev
 
 // Configurar conexión a la base de datos.
 const connection = mysql.createPool({ 
-    host: 'localhost',          //Lugar de la base de datos
-    user: 'root',        //Usuario a utilizar
-    password: '6fisem02',           //Contraseña del usuario a utilizar
-    database: 'restaurante_db'   //Nombre de la db a utililzar
+    host: '127.0.0.1',
+    port: '3306',          //Lugar de la base de datos
+    user: 'admin',        //Usuario a utilizar
+    password: 'YT5gfhfisem02',           //Contraseña del usuario a utilizar 
+    database: 'restauranteDb'   //Nombre de la db a utililzar
 });
+
+//http://192.168.0.14:8080/
+//http://127.0.0.1:3306/
 
 /*Crear la función para crear la conexión.
 //Normalmente:
@@ -26,7 +30,7 @@ connection.getConnection(
 connection.getConnection(
     (err,conn)=>{
         if (err){
-            console.log('Problema en la conexión con la DB.');
+            console.log('Problema en la conexión con la DB.', err);
         }
         if (conn){
             console.log('DB conectada correctamente.');

@@ -1,0 +1,12 @@
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+documentation
+dist
+public
+dist-ssr
+*.local
+
+# Editor directories and files
+.DS_Store
