@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const path = require('path');
 const history = require('connect-history-api-fallback');
+const { PORT } = require('./config');
 
 app.use(cors());
 app.use(morgan('tiny'));
@@ -44,6 +45,6 @@ app.use('/consultas', require('./routes/consulta')); //Módulo consultas en carp
 //});
 
 // Decirle a nuestra API en qué puerto correr(escuchar)
-app.listen(3000, function(){
-    console.log('API corriendo.');    
+app.listen(PORT, function(){
+    console.log('API corriendo en el puerto ', PORT);    
 });
