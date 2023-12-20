@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <!--AQUI COMIENZA LA BARRA DE CONSULTAS-->
-        <v-app-bar dense height="60%" color="indicador" dark>            
+        <v-app-bar dense height="60%" color="#FCBF00" dark>            
             <v-toolbar-title>
                 <h2>
                     <v-icon large>
@@ -14,23 +14,23 @@
         <v-spacer></v-spacer>
         <!--AQUI SE ENCUENTRAN LOS BOTONES PARA CONSULTAS-->
         <v-container>
-            <v-btn color='success' @click="consulta1 = true" class="mx-3">
-                <v-icon class="mx-1">
+            <v-btn color='#1E1E1E' @click="consulta1 = true" class="mx-3">
+                <v-icon class="mx-1" color="#FFF">
                     far fa-bell
                 </v-icon>
-                <h3>Mesero - fecha</h3>
+                <h3 style="color: white;">Mesero - fecha</h3>
             </v-btn>
-            <v-btn color='success' @click="consulta2 = true" class="mx-3">
-                <v-icon class="mx-1">
+            <v-btn color='#1E1E1E' @click="consulta2 = true" class="mx-3">
+                <v-icon class="mx-1" color="#fFF">
                     far fa-bell
                 </v-icon>
-                <h3>Mesa - fecha</h3>
+                <h3 style="color: white;">Mesa - fecha</h3>
             </v-btn>
-            <v-btn color='success' @click="consulta3 = true" class="mx-3">
-                <v-icon class="mx-1">
+            <v-btn color='#1E1E1E' @click="consulta3 = true" class="mx-3">
+                <v-icon class="mx-1" color="#FFF">
                     far fa-bell
                 </v-icon>
-                <h3>fecha</h3>
+                <h3 style="color: white;">fecha</h3>
             </v-btn>
             <v-spacer></v-spacer>
         </v-container>
@@ -41,6 +41,7 @@
             :items-per-page="20"
             class="mt-8"
             height="180px"
+            style="background-color: #FFF9E9;"
         >
         </v-data-table>        
         <!--DIALOGS NECESARIOS PARA LAS CONSULTAS-->
@@ -273,7 +274,7 @@
             </v-card>
         </v-dialog>
         <!--BOTONES PARA CONSULTAS DE FECHAS-->
-        <v-app-bar dense height="60%" color="indicador" dark>            
+        <v-app-bar dense height="60%" color="#FCBF00" dark>            
             <v-toolbar-title>
                 <h2>
                     <v-icon large>
@@ -288,17 +289,17 @@
         <v-spacer></v-spacer>
         <!--MÁS BOTONES PARA SEGUNDA SECCIÓN DE CONSULTAS-->
         <v-container>            
-            <v-btn color='success' @click="consulta4 = true" class="mx-3">
-                <v-icon class="mx-1">
+            <v-btn color='#1E1E1E' @click="consulta4 = true" class="mx-3">
+                <v-icon class="mx-1" color="#FFF">
                     far fa-bell
                 </v-icon>
-                <h3>Por fecha</h3>
+                <h3 style="color: white;">Por fecha</h3>
             </v-btn>
-            <v-btn color='success' @click="consulta5 = true" class="mx-3">
-                <v-icon class="mx-1">
+            <v-btn color='#1E1E1E' @click="consulta5 = true" class="mx-3">
+                <v-icon class="mx-1" color="#FFF">
                     far fa-bell
                 </v-icon>
-                <h3>Por mesero</h3>
+                <h3 style="color: white;">Por mesero</h3>
             </v-btn>
             <v-spacer></v-spacer>            
             <v-data-table
@@ -307,6 +308,7 @@
             :items-per-page="20"
             class="mt-8"
             height="180px"
+            style="background-color: #FFF9E9;"
             >
 
             </v-data-table>

@@ -1,7 +1,7 @@
 <template>
     <v-container>            
         <!--MENU DE NUEVA ORDEN-->
-        <v-app-bar dense height="60%" color="indicador" dark>            
+        <v-app-bar dense height="60%" color="#FCBF00" dark>            
             <v-toolbar-title>
                 <h2>
                     <v-icon large>
@@ -11,7 +11,7 @@
                 </h2>
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-btn color='success' @click="nl_dialog = true">
+            <v-btn color='#1E1E1E' @click="nl_dialog = true">
                 <v-icon class="mx-1">
                     far fa-plus-square
                 </v-icon>
@@ -27,6 +27,7 @@
         :items-per-page="20"
         class="mt-8"
         height="600px"
+        style="background-color: #FFF9E9;"
         >
             <template v-slot:[`item.actions`]="{item}" >
                 <v-icon @click="eliminar_orden(item)" small class="mr-3">
@@ -54,7 +55,7 @@
                 </v-icon>
             </template>
             <template v-slot:[`item.recibo`]="{item}">
-                <v-btn color="primary" @click="ver_recibo(item)" small class="mr-3">
+                <v-btn color="#FCBF00" @click="ver_recibo(item)" small class="mr-3">
                     Ver recibo
                 </v-btn>
             </template>
@@ -490,7 +491,7 @@
                     <v-spacer></v-spacer>
                     <v-btn                                                          
                             x-large
-                            color="primary"
+                            color="#FCBF00"
                             @click="cancelar()"
                     >
                     Aceptar

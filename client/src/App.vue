@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-navigation-drawer app color="secondary">
+  <v-app dark style="background-color: #FFEDBB;">
+    <v-navigation-drawer app color="#1E1E1E" >
       <v-container>
         <!-- <v-img
         outlined
@@ -10,12 +10,12 @@
         <v-img
         outlined
         max-height="400"
-        src="https://pbs.twimg.com/media/E2uOgEWVIAUf0aJ.jpg"        
+        src="./assets/SideBarImg.svg"        
         ></v-img>
         <v-spacer></v-spacer>
         <v-btn
           depressed
-          color="primary"
+          color="#FCBF00"
           :to="{name: 'Ordenes'}"
           width="100%"
           class="mt-5"
@@ -29,7 +29,7 @@
         <v-spacer></v-spacer>
         <v-btn
           depressed
-          color="primary"
+          color="#FCBF00"
           :to="{name: 'Meseros'}"
           width="100%"
           class="mt-5"
@@ -42,7 +42,7 @@
         <v-spacer></v-spacer>                    
         <v-btn
           depressed
-          color="primary"
+          color="#FCBF00"
           :to="{name: 'Comidas'}"
           width="100%"
           class="mt-5"
@@ -55,7 +55,7 @@
         <v-spacer></v-spacer>
         <v-btn
           depressed
-          color="primary"
+          color="#FCBF00"
           :to="{name: 'Bebidas'}"
           width="100%"
           class="mt-5"
@@ -68,7 +68,7 @@
         <v-spacer></v-spacer>
         <v-btn
           depressed
-          color="primary"
+          color="#FCBF00"
           :to="{name: 'Mesas'}"
           width="100%"
           class="mt-5"
@@ -81,7 +81,7 @@
         <v-spacer></v-spacer>
         <v-btn
           depressed
-          color="primary"
+          color="#FCBF00"
           :to="{name: 'Consultas'}"
           width="100%"
           class="mt-5"
@@ -94,8 +94,8 @@
     </v-container>
   </v-navigation-drawer>
 
-  <v-app-bar app color="primary" dark>
-    <v-row class="my-5"> <!--mx= en x / mt= arriba / my= en y-->
+  <v-app-bar app color="#FCBF00" dark>
+    <v-row class="my-5 rounded-lg"> <!--mx= en x / mt= arriba / my= en y-->
       <v-icon class="mx-5" x-large>
         fas fa-torii-gate
       </v-icon>
