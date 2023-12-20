@@ -13,8 +13,8 @@ Vue.config.productionTip = false
 
 Vue.use(VueAxios, axios);
 
-//axios.defaults.baseURL = 'https://restaurantordermanagement-production.up.railway.app';
-axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.baseURL = 'https://restaurantordermanagement-production.up.railway.app';
+//axios.defaults.baseURL = 'http://localhost:3000';
 
 new Vue({
   router,
